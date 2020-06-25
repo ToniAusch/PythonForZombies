@@ -4,7 +4,7 @@
 salarioinicial = int(input('Digite seu salario atual: '))
 aumento = float(input('Digite a porcentagem do aumento: '))
 
-valoraumentado = salarioinicial * aumento  
+valoraumentado = salarioinicial * (aumento/100)  
 
 salariofinal = salarioinicial + valoraumentado 
 
