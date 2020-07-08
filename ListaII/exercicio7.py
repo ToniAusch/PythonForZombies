@@ -7,12 +7,13 @@
 
 area = int(input('Digite a área a ser pintada: (em metros quadrados)'))
 
-litros = area / 3 
-lata = litros/18 * 10
-total = lata * 80
+if area % 54 == 0: 
+    latas = area/54
+else:
+    latas = int(area/54)+1
 
-if lata 
+valor = latas * 80
 
-print(f'Latas a serem usadas {lata:.1f}')
-print(f'O valor total é de R${total:.0f}')
+print(f'Será ultilizado {latas} latas')
+print(f'O valor total é de R${valor}')
 
